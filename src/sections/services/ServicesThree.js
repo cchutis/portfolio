@@ -137,27 +137,27 @@ class ServicesOne extends React.Component {
             <Section id="services">
                 <ServiceContainer>
                     <Container>
-                        <AnimatedHeading text="My Services" />
+                        <AnimatedHeading text="Skills" />
                         <Row>
                             <Col md={4}>
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                         <ServiceElement>
                                             <ServiceIcon>
-                                                    <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                    <img src={this.props.frontend.childImageSharp.fluid.src} alt="Front End Development" />
                                             </ServiceIcon>
                                             <ServiceHeading>
-                                                Mobile App Development
+                                                Front End Development
                                             </ServiceHeading>
                                             <ServiceSeparator/>
                                             <ServiceList>
                                                 <ServiceListElement>
-                                                    Lorem ipsum dolor sit amet
+                                                    Creating dynamic front end applications
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    In vitae ultricies lacus vitae
+                                                    Emphasis on mobile friendly/SEO builds
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    Pellentesque blandit libero
+                                                    Experience with fullstack/APIs connections
                                                 </ServiceListElement>
                                             </ServiceList>
                                         </ServiceElement>
@@ -167,21 +167,21 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInDown"  delay={400}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props.uiux.childImageSharp.fluid.src} alt="UI/UX Design" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Web  Development
+                                            UI/UX Design
                                         </ServiceHeading>
                                         <ServiceSeparator/>
                                         <ServiceList>
                                             <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
+                                                Focus on clean, robust layouts
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                In vitae ultricies lacus vitae
+                                                User experience a priority
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Pellentesque blandit libero
+                                                Clear messaging and signals
                                             </ServiceListElement>
                                         </ServiceList>
                                     </ServiceElement>
@@ -191,21 +191,21 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props.vr.childImageSharp.fluid.src} alt="Virtual Reality Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Email Marketing
+                                            Virtual Reality Development
                                         </ServiceHeading>
                                         <ServiceSeparator/>
                                         <ServiceList>
                                             <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
+                                                Interactive Unity-based VR
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                In vitae ultricies lacus vitae
+                                                User experience focus for new users
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Pellentesque blandit libero
+                                                Wide variety of platforms including Web
                                             </ServiceListElement>
                                         </ServiceList>
                                     </ServiceElement>
@@ -215,21 +215,21 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.seo.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Search Engine Optimization
+                                            Mobile App Development
                                         </ServiceHeading>
                                         <ServiceSeparator/>
                                         <ServiceList>
                                             <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
+                                                Development using React Native
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                In vitae ultricies lacus vitae
+                                                Deployment to iOS or Android
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Pellentesque blandit libero
+                                                Use of xCode/Native iOS hardware
                                             </ServiceListElement>
                                         </ServiceList>
                                     </ServiceElement>
@@ -239,21 +239,21 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.network.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props.design.childImageSharp.fluid.src} alt="Graphic Design & Branding" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Network Management
+                                            Graphic Design & Branding
                                         </ServiceHeading>
                                         <ServiceSeparator/>
                                         <ServiceList>
                                             <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
+                                                Photoshop/Illustrator designs to compliment Front end
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                In vitae ultricies lacus vitae
+                                                Creation of style guides & company branding
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Pellentesque blandit libero
+                                                Creation of custom SVG icons & elements
                                             </ServiceListElement>
                                         </ServiceList>
                                     </ServiceElement>
@@ -263,21 +263,21 @@ class ServicesOne extends React.Component {
                                     <AnimationContainer animation="fadeInRight" delay={1200}>
                                         <ServiceElement>
                                             <ServiceIcon>
-                                                    <img src={this.props.ui.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                    <img src={this.props.motion.childImageSharp.fluid.src} alt="Motion Design" />
                                             </ServiceIcon>
                                             <ServiceHeading>
-                                                UI/UX Development
+                                                Motion Design
                                             </ServiceHeading>
                                             <ServiceSeparator/>
                                             <ServiceList>
                                                 <ServiceListElement>
-                                                    Lorem ipsum dolor sit amet
+                                                    Animated SVG icons & media
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    In vitae ultricies lacus vitae
+                                                    Transparent video to HTML5 standards
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    Pellentesque blandit libero
+                                                    Use of After Effects to enhance web video
                                                 </ServiceListElement>
                                             </ServiceList>
                                         </ServiceElement>
@@ -303,44 +303,44 @@ export default props => (
             }
           }
         }
-        web: file(relativePath: {eq: "icons/web.png"}) {
+        frontend: file(relativePath: {eq: "icons/frontend-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
         }
-        mobile: file(relativePath: {eq: "icons/mobile.png"}) {
+        uiux: file(relativePath: {eq: "icons/uiux-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
         }
-        seo: file(relativePath: {eq: "icons/seo2.png"}) {
+        vr: file(relativePath: {eq: "icons/vr-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
         }
-        email: file(relativePath: {eq: "icons/email.png"}) {
+        mobile: file(relativePath: {eq: "icons/mobile-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
         }
-        ui: file(relativePath: {eq: "icons/sketch.png"}) {
+        design: file(relativePath: {eq: "icons/design-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
         }
-        network: file(relativePath: {eq: "icons/network.png"}) {
+        motion: file(relativePath: {eq: "icons/motion-skills.png"}) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 512) {
               src
             }
           }
@@ -349,19 +349,19 @@ export default props => (
       `}
       render={({ 
         background,
-        web,
+        frontend,
+        uiux,
+        vr,
         mobile,
-        seo,
-        email,
-        ui,
-        network}) => <ServicesOne  
+        design,
+        motion}) => <ServicesOne  
         background={background}
-        web={web}
+        frontend={frontend}
+        uiux={uiux}
+        vr={vr}
         mobile={mobile}
-        seo={seo}
-        email={email}
-        ui={ui}
-        network={network}
+        design={design}
+        motion={motion}
         {...props} />}
     />
   )
