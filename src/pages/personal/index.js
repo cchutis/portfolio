@@ -7,7 +7,6 @@ import AboutPersonal from 'sections/about/AboutPersonal.js'
 import ServicesThree from 'sections/services/ServicesThree.js'
 import PortfolioThree from 'sections/portfolio/PortfolioThree.js'
 import ContactPersonal from 'sections/contact/ContactPersonal.js'
-// import PortfolioModal from 'sections/portfolio/PortfolioModal.js'
 
 class Index extends React.Component {
 

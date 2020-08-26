@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-creative-video-2-index-js": () => import("./../src/pages/creative-video-2/index.js" /* webpackChunkName: "component---src-pages-creative-video-2-index-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-personal-index-js": () => import("./../src/pages/personal/index.js" /* webpackChunkName: "component---src-pages-personal-index-js" */),
-  "component---src-pages-personal-video-index-js": () => import("./../src/pages/personal-video/index.js" /* webpackChunkName: "component---src-pages-personal-video-index-js" */)
+  "component---src-pages-personal-video-index-js": () => import("./../src/pages/personal-video/index.js" /* webpackChunkName: "component---src-pages-personal-video-index-js" */),
+  "component---src-pages-portfolio-biorecovery-js": () => import("./../src/pages/portfolio/biorecovery.js" /* webpackChunkName: "component---src-pages-portfolio-biorecovery-js" */)
 }
 

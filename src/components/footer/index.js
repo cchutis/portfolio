@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 
 class Footer extends React.Component{
 
@@ -29,10 +29,9 @@ class Footer extends React.Component{
         return (
             <FooterMain>
                 <SocialIcons>
-                    <FontAwesomeIcon icon={faGithub} className="social_icon" onClick={() => window.open('https://www.github.com')}/>
-                    <FontAwesomeIcon icon={faTwitter} className="social_icon" onClick={() => window.open('https://www.twitter.com')} />
-                    <FontAwesomeIcon icon={faYoutube} className="social_icon" onClick={() => window.open('https://www.youtube.com')} />
-                    <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com')} />
+                    <FontAwesomeIcon icon={faGithub} className="social_icon" onClick={() => window.open('https://github.com/cchutis')}/>
+                    <FontAwesomeIcon icon={faMedium} className="social_icon" onClick={() => window.open('https://medium.com/@constantinechutis')} />
+                    <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com/in/constantinechutis/')} />
                 </SocialIcons>
             </FooterMain>
         )

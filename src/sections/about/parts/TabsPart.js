@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import Progress from 'components/progress'
+// import Progress from 'components/progress'
 import Timeline from 'sections/about/parts/Timeline'
 
 class TabsPart extends React.Component {
@@ -75,6 +75,27 @@ class TabsPart extends React.Component {
             animation: ${Fade} 1s forwards;
         `
 
+        const SkillsGrid = styled.div`
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        `
+        const SkillsRow = styled.div`
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        `
+        const SkillsItem = styled.div`
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        `
+
+        
+
         return(
             <TabContainer>
                 <TabSelectors>
@@ -92,11 +113,62 @@ class TabsPart extends React.Component {
                     <Tab style={{
                         display: this.state.tab === "skills" ? "block" : "none"
                     }}>
-                        <Progress value={80} text="React" />
-                        <Progress value={90} text="Unity" />
-                        <Progress value={50} text="Ruby on Rails" />
-                        <Progress value={40} text="C#" />
-                        <Progress value={80} text="CSS" />
+                        <SkillsGrid>
+                            <SkillsRow>
+                                <SkillsItem>
+                                    <img src="./skills-icons/javascript.png" alt="" />
+                                    <p>JavaScript ES6</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/react.png" alt="" />
+                                    <p>React/React Native</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/electron.png" alt="" />
+                                    <p>Electron JS</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/node.png" alt="" />
+                                    <p>Node JS</p>
+                                </SkillsItem>
+                            </SkillsRow>
+                            <SkillsRow>
+                                <SkillsItem>
+                                    <img src="./skills-icons/html.png" alt="" />
+                                    <p>HTML5</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/css.png" alt="" />
+                                    <p>CSS3</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/sass.png" alt="" />
+                                    <p>Sass</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/aframe.png" alt="" />
+                                    <p>A-Frame</p>
+                                </SkillsItem>
+                            </SkillsRow>
+                            <SkillsRow>
+                                <SkillsItem>
+                                    <img src="./skills-icons/rubyrails.png" alt="" />
+                                    <p>Ruby on Rails</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/sketch.png" alt="" />
+                                    <p>Sketch</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/unity.png" alt="" />
+                                    <p>Unity 3D</p>
+                                </SkillsItem>
+                                <SkillsItem>
+                                    <img src="./skills-icons/csharp.png" alt="" />
+                                    <p>C#</p>
+                                </SkillsItem>
+                            </SkillsRow>
+                        </SkillsGrid>
                     </Tab>
                 </Tabs>
                 <Tabs>

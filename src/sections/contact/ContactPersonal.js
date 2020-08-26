@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { graphql, StaticQuery } from 'gatsby'
 import styled, { keyframes } from 'styled-components'
 import AnimationContainer from 'components/animation-container'
-import ContactPersonalForm from './parts/ContactPersonalForm.js'
+// import ContactPersonalForm from './parts/ContactPersonalForm.js'
 
 class ContactPersonal extends React.Component {
 
@@ -17,17 +17,17 @@ class ContactPersonal extends React.Component {
             padding: 100px 0;
         `
 
-        const FormRow = styled(Row)`
-           background-color: #111;
-        `
+        // const FormRow = styled(Row)`
+        //    background-color: #111;
+        // `
 
-        const ContactCol = styled(Col)`
-            min-height: 600px;
-            max-height: 600px;
-            padding: 0;
-            display: flex;
-            align-items: center;
-        `
+        // const ContactCol = styled(Col)`
+        //     min-height: 600px;
+        //     max-height: 600px;
+        //     padding: 0;
+        //     display: flex;
+        //     align-items: center;
+        // `
 
         const gradientAnimation = keyframes`
             0% {
@@ -41,25 +41,25 @@ class ContactPersonal extends React.Component {
             }
         `
 
-        const Gradient = styled.div`
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            clip-path: polygon(0% 100%, 10px 100%, 10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px), 10px 100%, 100% 100%, 100% 0%, 0% 0%);
-            background: linear-gradient(120deg, #04e5e5, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-            background-size: 300% 300%;
-            animation: ${gradientAnimation} 5s ease-in-out infinite;
-        `
+        // const Gradient = styled.div`
+        //     position: absolute;
+        //     height: 100%;
+        //     width: 100%;
+        //     top: 0;
+        //     clip-path: polygon(0% 100%, 10px 100%, 10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px), 10px 100%, 100% 100%, 100% 0%, 0% 0%);
+        //     background: linear-gradient(120deg, #04e5e5, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        //     background-size: 300% 300%;
+        //     animation: ${gradientAnimation} 5s ease-in-out infinite;
+        // `
 
 
 
 
-        const Map = styled.iframe`
-            border: none;
-            height: 100%;
-            width: 100%;
-        `
+        // const Map = styled.iframe`
+        //     border: none;
+        //     height: 100%;
+        //     width: 100%;
+        // `
 
         const IconRow = styled(Row)`
             margin-top: 150px;
@@ -126,7 +126,7 @@ class ContactPersonal extends React.Component {
         return(
             <Section id="contact">
                 <Container>
-                  <AnimationContainer animation="fadeIn">
+                  {/* <AnimationContainer animation="fadeIn">
                     <FormRow>
                       <ContactCol md={6}>
                           <ContactPersonalForm />
@@ -138,7 +138,7 @@ class ContactPersonal extends React.Component {
                           src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDZFikQ-ag7ljyfw-4XaT6yl3WeVUChSj4&center=40.85283066925672,-72.94907540000001&zoom=10&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x242f3e&style=element:labels.text.fill%7Ccolor:0x746855&style=element:labels.text.stroke%7Ccolor:0x242f3e&style=feature:administrative%7Celement:geometry%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi%7Cvisibility:off&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi.park%7Celement:geometry%7Ccolor:0x263c3f&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x6b9a76&style=feature:road%7Celement:geometry%7Ccolor:0x38414e&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x212a37&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x9ca5b3&style=feature:road.arterial%7Celement:labels%7Cvisibility:off&style=feature:road.highway%7Celement:geometry%7Ccolor:0x746855&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x1f2835&style=feature:road.highway%7Celement:labels%7Cvisibility:off&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xf3d19c&style=feature:road.local%7Cvisibility:off&style=feature:road.local%7Celement:labels%7Cvisibility:off&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:geometry%7Ccolor:0x2f3948&style=feature:transit.station%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:water%7Celement:geometry%7Ccolor:0x17263c&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x515c6d&style=feature:water%7Celement:labels.text.stroke%7Ccolor:0x17263c&size=500x500"/>
                       </ContactCol>
                     </FormRow>
-                  </AnimationContainer>
+                  </AnimationContainer> */}
                   <IconRow>
                       <IconCol md={4}>
                         <AnimationContainer animation="fadeIn" delay={500}>
