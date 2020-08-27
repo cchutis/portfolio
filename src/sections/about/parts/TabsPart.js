@@ -104,6 +104,7 @@ class TabsPart extends React.Component {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: white;
         `
 
         
@@ -128,55 +129,55 @@ class TabsPart extends React.Component {
                         <SkillsGrid>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src={javascript} alt="" />
+                                    <img src={javascript} width="150px" alt="" />
                                     <p>JavaScript ES6</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={react} alt="" />
-                                    <p>React/React Native</p>
+                                    <img src={react} width="150px" alt="" />
+                                    <p>React</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={electron} alt="" />
+                                    <img src={electron} width="150px" alt="" />
                                     <p>Electron JS</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={node} alt="" />
+                                    <img src={node} width="150px" alt="" />
                                     <p>Node JS</p>
                                 </SkillsItem>
                             </SkillsRow>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src={html} alt="" />
+                                    <img src={html} width="150px" alt="" />
                                     <p>HTML5</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={css} alt="" />
+                                    <img src={css} width="150px" alt="" />
                                     <p>CSS3</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={sass} alt="" />
+                                    <img src={sass} width="150px" alt="" />
                                     <p>Sass</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={aframe} alt="" />
+                                    <img src={aframe} width="150px" alt="" />
                                     <p>A-Frame</p>
                                 </SkillsItem>
                             </SkillsRow>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src={rubyrails} alt="" />
+                                    <img src={rubyrails} width="150px" alt="" />
                                     <p>Ruby on Rails</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={sketch} alt="" />
+                                    <img src={sketch} width="150px" alt="" />
                                     <p>Sketch</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={unity} alt="" />
+                                    <img src={unity} width="150px" alt="" />
                                     <p>Unity 3D</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src={csharp} alt="" />
+                                    <img src={csharp} width="150px" alt="" />
                                     <p>C#</p>
                                 </SkillsItem>
                             </SkillsRow>
@@ -188,7 +189,7 @@ class TabsPart extends React.Component {
                             display: this.state.tab === "experience" ? "block" : "none"
                         }}>
                         <Timeline data={{
-                                "2010 - Present" :  {
+                                "Current" :  {
                                     title: "Developer / Designer",
                                     institution: "Leviathan Design Group LLC.",
                                     description: "Develop websites and media for companies, such as law firms, personal trainers, realtors, and a Chamber of Commerce. Create visual themes, styles, websites, advertisements and logos for clients’ companies. Developed and maintained website for New York Rangers Podcast, Blueshirts Breakaway."
@@ -211,13 +212,13 @@ class TabsPart extends React.Component {
                             display: this.state.tab === "education" ? "block" : "none"
                         }}>
                         <Timeline data={{
-                                "2019" :  {
+                                "2019 - 2019" :  {
                                     title: "Software Engineer & FullStack Development",
                                     institution: "Flatiron School",
                                     description: "New York, NY"
                                 },
-                                "2009" : {
-                                    title: "Computer Repair & Networking",
+                                "2008 - 2009" : {
+                                    title: "Computer Repair & Networking / A+ Certification",
                                     institution: "Hunter Business School",
                                     description: "Medford, NY"
                                 },

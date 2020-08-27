@@ -68,7 +68,7 @@ class ServicesOne extends React.Component {
         const ServiceElement = styled.div`
             margin-bottom: 20px;
             text-align: center;
-            padding: 40px;
+            padding: 40px 0;
             border-radius: 20px;
             transition: .2s;
             &:hover {
@@ -245,7 +245,7 @@ class ServicesOne extends React.Component {
                                         <ServiceSeparator/>
                                         <ServiceList>
                                             <ServiceListElement>
-                                                Photoshop/Illustrator designs to compliment Front end
+                                                Photoshop/Illustrator designs for front end
                                             </ServiceListElement>
                                             <ServiceListElement>
                                                 Creation of style guides & company branding

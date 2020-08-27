@@ -93,8 +93,8 @@ class ContactPersonal extends React.Component {
             border: 2px solid #444;
         `
         const Icon = styled.img`
-            height: 70px;
-            width: 70px;
+            height: 80px;
+            width: 80px;
             object-fit: contain;
         `
 
@@ -183,15 +183,15 @@ class ContactPersonal extends React.Component {
                         <AnimationContainer animation="fadeIn" delay={1500}>
                           <InfoPart>
                             <IconContainer>
-                              <Icon src={this.props.mapIcon.childImageSharp.fluid.src} alt="map" />
+                              <Icon src={this.props.resumeIcon.childImageSharp.fluid.src} alt="resume" />
                             </IconContainer>
                             <Info>
                               <InfoTitle>
-                                Location
+                                Resume
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink target="_blank" href="https://maps.google.com/maps?ll=53.343244,-6.259338&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1%20Grafton%20Street%20Dublin%20Ireland">
-                                  Long Island, New York
+                                <InfoLink target="_blank" href="#">
+                                  View Resume
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>
@@ -212,21 +212,21 @@ export default props => (
     query {
       emailIcon: file(relativePath: {eq: "icons/email-icon.png"}) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 512) {
             src
           }
         }
       }
-      mapIcon: file(relativePath: {eq: "icons/location-icon.png"}) {
+      resumeIcon: file(relativePath: {eq: "icons/resume-icon.png"}) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 512) {
             src
           }
         }
       }
       phoneIcon: file(relativePath: {eq: "icons/phone-icon.png"}) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 512) {
             src
           }
         }
@@ -235,10 +235,10 @@ export default props => (
     `}
     render={({ 
       emailIcon, 
-      mapIcon, 
+      resumeIcon, 
       phoneIcon}) => <ContactPersonal  
       emailIcon={emailIcon} 
-      mapIcon={mapIcon} 
+      resumeIcon={resumeIcon} 
       phoneIcon={phoneIcon}
       {...props} />}
   />
