@@ -15,6 +15,7 @@ class ContactPersonal extends React.Component {
             overflow: hidden;
             background-color: #000;
             padding: 100px 0;
+            position: relative;
         `
 
         // const FormRow = styled(Row)`

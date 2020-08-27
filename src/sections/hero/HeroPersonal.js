@@ -52,9 +52,6 @@ class HeroPersonal extends React.Component {
                 width: 100%;
                 height: 100%;
             }
-            background-image: url(${this.props.background.childImageSharp.fluid.src});
-            background-size: cover;
-            background-repeat: no-repeat;
         `
 
         const Overlay = styled.div`
@@ -250,13 +247,6 @@ export default props => (
     <StaticQuery
       query={graphql`
       query {
-        background: file(relativePath: {eq: "background-poly.jpg"}) {
-          childImageSharp {
-            fluid(maxWidth: 2000, quality: 100) {
-              src
-            }
-          }
-        }
         shapes: allFile(filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "shapes"}}) {
           edges {
             node {

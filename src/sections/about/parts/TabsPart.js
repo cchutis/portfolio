@@ -2,6 +2,18 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 // import Progress from 'components/progress'
 import Timeline from 'sections/about/parts/Timeline'
+import aframe from './skills-icons/aframe.png'
+import csharp from './skills-icons/csharp.png'
+import css from './skills-icons/css.png'
+import electron from './skills-icons/electron.png'
+import html from './skills-icons/html.png'
+import javascript from './skills-icons/javascript.png'
+import node from './skills-icons/node.png'
+import react from './skills-icons/react.png'
+import rubyrails from './skills-icons/rubyrails.png'
+import sass from './skills-icons/sass.png'
+import unity from './skills-icons/unity.png'
+import sketch from './skills-icons/sketch.png'
 
 class TabsPart extends React.Component {
     constructor(props) {
@@ -116,55 +128,55 @@ class TabsPart extends React.Component {
                         <SkillsGrid>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src="./skills-icons/javascript.png" alt="" />
+                                    <img src={javascript} alt="" />
                                     <p>JavaScript ES6</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/react.png" alt="" />
+                                    <img src={react} alt="" />
                                     <p>React/React Native</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/electron.png" alt="" />
+                                    <img src={electron} alt="" />
                                     <p>Electron JS</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/node.png" alt="" />
+                                    <img src={node} alt="" />
                                     <p>Node JS</p>
                                 </SkillsItem>
                             </SkillsRow>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src="./skills-icons/html.png" alt="" />
+                                    <img src={html} alt="" />
                                     <p>HTML5</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/css.png" alt="" />
+                                    <img src={css} alt="" />
                                     <p>CSS3</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/sass.png" alt="" />
+                                    <img src={sass} alt="" />
                                     <p>Sass</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/aframe.png" alt="" />
+                                    <img src={aframe} alt="" />
                                     <p>A-Frame</p>
                                 </SkillsItem>
                             </SkillsRow>
                             <SkillsRow>
                                 <SkillsItem>
-                                    <img src="./skills-icons/rubyrails.png" alt="" />
+                                    <img src={rubyrails} alt="" />
                                     <p>Ruby on Rails</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/sketch.png" alt="" />
+                                    <img src={sketch} alt="" />
                                     <p>Sketch</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/unity.png" alt="" />
+                                    <img src={unity} alt="" />
                                     <p>Unity 3D</p>
                                 </SkillsItem>
                                 <SkillsItem>
-                                    <img src="./skills-icons/csharp.png" alt="" />
+                                    <img src={csharp} alt="" />
                                     <p>C#</p>
                                 </SkillsItem>
                             </SkillsRow>

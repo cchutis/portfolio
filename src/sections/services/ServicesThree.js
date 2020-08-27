@@ -15,9 +15,7 @@ class ServicesOne extends React.Component {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-color: #111;
-            background-image: url(${this.props.background.childImageSharp.fluid.src});
-            background-size: cover;
+            background-color: #000;
             .heading {
                 width: 100%;
             }
@@ -296,13 +294,6 @@ export default props => (
     <StaticQuery
       query={graphql`
       query {
-        background: file(relativePath: {eq: "bg2.jpg"}) {
-          childImageSharp {
-            fluid(maxWidth: 4000, quality: 100) {
-              src
-            }
-          }
-        }
         frontend: file(relativePath: {eq: "icons/frontend-skills.png"}) {
           childImageSharp {
             fluid(maxWidth: 512) {

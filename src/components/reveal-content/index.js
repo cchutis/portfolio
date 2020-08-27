@@ -116,11 +116,11 @@ class RC extends React.Component {
             }
             
             &:before {
-                background-color: #04e5e5;
+                background-color: rgba(4, 231, 231, 0.5);
             }
             
             &:after {
-                background-color: #fff;
+                background-color: rgba(4, 231, 231, 0.5);
                 animation-delay: .5s;
             }
             &.animate {
