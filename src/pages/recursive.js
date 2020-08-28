@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class RecursivePage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>Recursive</title>
+        <meta name="description" content="Recursive Project Management App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="React Single Page App"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,17 +125,18 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="Recursive"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
+           <p>	
+           Project: Recursive Project Management App
+Type: React Web App
+Tools: JavaScript, React, Ruby on Rails
+Date: 2019</p>
+            <p>Recursive is a project management app, ala Trello, built over the course of 4 days at Flatiron School. The app is a full React app, with a Rails backend. The app allows for full CRUD actions, as well as allowing the user to create multiple projects, and tasks within each project. App has full live search and filter actions via controlled forms. Tasks and projects can be assigned due dates as well as difficulty ratings. Stretch goal for difficulty ratings is to assign a user experience for completing tasks, based on rating level, and will unlock various perks, such as color themes and badges.</p>
 
           </Content>
         </Container>

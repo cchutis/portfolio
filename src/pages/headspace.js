@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class HeadspacePage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>Headspace</title>
+        <meta name="description" content="Headspace VR Web App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="Virtual Reality Web App"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,17 +125,18 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="Headspace"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
+           <p>	
+Project: Headspace VR Web App
+Type: React/A-frame Web VR App
+Tools: React(Preact), A-frame, WebXR, Ruby on Rails
+Date: 2019</p>
+            <p>Headspace is a VR web app created as a final project at Flatiron School over the course of 2 weeks. The project was built using a React/Aframe frontend, and Ruby on Rails backend. Preact, more specifically, was used for lightweight logic, while Aframe handled the heavy lifting on browser based rendering. The app has 2 modes, Immersive Mode, which allows the user to load up various environments, allowing them to relax with the sights and sounds of the selected environment (Beach, Space, Campfire, etc.) Users can also enable relaxing music, as well as mute the SFX/music. Headspace's second mode, Theater mode, is a personal movie theater the User can watch movies, on an oversized cinema screen. This app was demoed at the Flatiron's Science Fair, and users were able to experience the app in browser, and in VR using a Google Cardboard & mobile phone setup. Theater mode was demoed using downloaded movie trailers from Apple Movie Trailer's Website.</p>
 
           </Content>
         </Container>

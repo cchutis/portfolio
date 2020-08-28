@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class SafeguardPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>Safeguard VR</title>
+        <meta name="description" content="VR Educational App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="Virtual Reality App"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,18 +125,21 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="Safeguard"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
-
+           <p>	
+           Project: Safeguard: VR Crime Scene Experience
+Type: VR Educational Application
+Tools: Unity3D, Blender, C#, HTC Vive
+Date: 2017</p>
+           <p>A major hurdle in the crime scene cleanup industry is creating public awareness. I am utilizing VR technologies to make an educational experience that transports users to a virtual crime scene and teaches them about the techniques, materials and equipment professionals use on the job.</p>
+            <p>I spearheaded the initiative to produce all of the content, programming, and design. As I developed this application over the course of a few months, I taught myself C#, Unity3D, Blender, and other VR development practices.</p>
+            <p>Upon reaching a stable alpha version of the application, the company published a press release about the new project, which generated some buzz among the industry.</p>
+            <p> The project is still in-development in an alpha state.</p>
           </Content>
         </Container>
       </Main>

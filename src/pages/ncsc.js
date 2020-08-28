@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class NcscPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,8 +109,8 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>National Crime Scene Cleanup</title>
+        <meta name="description" content="Wordpress Website" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
@@ -125,17 +125,18 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="National Crime Scene Cleanup"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
+           <p>	
+           	
+Project: National Crime Scene Cleanup
 Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
+Tools: Photoshop, Illustrator, Brackets, Sketch
+Date: 2017</p>
 
           </Content>
         </Container>

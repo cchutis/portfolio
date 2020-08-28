@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class CryptoChambrPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>CryptoChambr</title>
+        <meta name="description" content="CryptoChambr Ruby on Rails App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="Ruby on Rails App"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,17 +125,18 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="CryptoChambr"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
+           <p>Project: Cryptochambr
+              Type: Ruby on Rails
+              Tools: Ruby, Ruby on Rails, CoinMarketCap API, Sketch, Particles.js
+              Date: 2019</p>
+            <p>Cryptochambr is a Flatiron School project created over 4 days utilizing a Full stack Ruby on Rails framework. The app allows users to perform mock cryptocurrency trading. Users have full CRUD capability on their own account. They can add funds in USD, browse current crypto prices based on real time CoinMarketCap API info, purchase and sell coins, and get historical transaction stats. 
+              Users are also capable of filtering transactions by type (buy or sell) and coin. Transaction visual indicators also will display in red or green, based on if coin's current valuation is more or less than original purchase price.</p>
 
           </Content>
         </Container>

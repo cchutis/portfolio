@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class Sq3dPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>S-Squared 3D Printers</title>
+        <meta name="description" content="eCommerce Website" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="eCommerce Website"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,17 +125,18 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="S-Squared 3D"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
+           <p>	
+           Project: S-Squared 3D Printers
 Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
-Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
+Tools: Photoshop, Illustrator, Premiere, After Effects, Brackets, Sketch
+Date: 2017</p>
+            <p>S-Squared 3D Printers’ website promotes and provides a means of purchasing their various models of 3D printers and accessories. All photography and videography included on the site was shot by me. I also maintain the backend shopping cart.</p>
 
           </Content>
         </Container>

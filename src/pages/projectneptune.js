@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
 
-export default class BioRecoveryPage extends React.Component {
+export default class ProjectNeptunePage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -109,15 +109,15 @@ export default class BioRecoveryPage extends React.Component {
   return(
     <div>
       <Helmet>
-        <title>Bio Recovery</title>
-        <meta name="description" content="Bio Recovery Wordpress Website" />
+        <title>Project Neptune VR</title>
+        <meta name="description" content="VR Showcase App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="Wordpress Website"
+                        text="Virtual Reality App"
                         revealDuration={700}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -125,18 +125,21 @@ export default class BioRecoveryPage extends React.Component {
            </Heading1>
            <Heading2>
            <BaffleText
-                        text="Bio Recovery"
+                        text="Project Neptune VR"
                         revealDuration={500}
                         revealDelay={600}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Bio Recovery
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, After Effects, Brackets, Sketch
+           <p>	
+           Project: Project Neptune VR
+Type: VR Showcase Application
+Tools: Unity3D, Sketchup, C#, HTC Vive
 Date: 2018</p>
-<p>Bio Recovery's website was built on a Wordpress platform utilizing animated elements and custom CSS modern styling. A style guide was created and used for the company's branding.</p>
-
+           <p>S-Squared 3D Printers asked me to develop a VR experience for potential investors on their large scale, concrete 3D printer. The project, dubbed Neptune, will be capable of printing homes and structures using conventional concrete. They wanted a VR application designed in Unity3D that they could show off the machine and its final product, which was designed by an architecture firm: a one-story ranch home which the machine is capable of printing.
+The final product is an application in which potential investors can view the machine, tour the home, and view videos and photos of the team building and testing the machine.</p>
+            <p>In addition to the initial application being a virtual tour, other alpha versions include a version where potential homebuyers of the 3D printed home can customize the interior, with furniture and various colored walls. This alpha build will eventually become the basis for S-Squared 3D’s future plans, on offering 3D printed homes with ala carte customization options that users can experience before the home is built.</p>
+            <p>The home was modeled by me in Sketchup, based off of the architectural blueprints provided by S-Squared 3D.</p>
           </Content>
         </Container>
       </Main>
