@@ -1,8 +1,13 @@
 import React from 'react'
+import PageRevealer from '../components/page-revealer'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
+import splash from '../../content/images/portfolio-items/Orbs OS/splash.png'
+import login from '../../content/images/portfolio-items/Orbs OS/login.png'
+import create from '../../content/images/portfolio-items/Orbs OS/create.png'
+import desktop from '../../content/images/portfolio-items/Orbs OS/desktop.png'
 
 export default class OrbsOsPage extends React.Component {
 
@@ -13,7 +18,8 @@ export default class OrbsOsPage extends React.Component {
         width: 0,
         animation : false,
         complete: false,
-        hide: false
+      hide: false,
+      pageTitle: "ORBS OS"
     }
     this.reveal = this.reveal.bind(this)
   }
@@ -99,12 +105,50 @@ export default class OrbsOsPage extends React.Component {
                   font-size: 70px;
               }
           `
-
-          const Content = styled.div`
+    const Content = styled.div`
               position: relative;
               z-index: 10;
               margin-top: 100px;
+              color: white;
           `
+
+    const TopSection = styled.div`
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      `
+
+    const InfoBox = styled.div`
+                          width: 30%;
+                          background-color: #5b7f86;
+                          padding: 20px;
+                          overflow: hidden;
+                          min-height: 275px;
+                          border-radius: 10px;
+                      `
+
+    const Bold = styled.b`
+                      color: #00ffff;
+                      `
+
+    const Button = styled.button`
+                      font-weight: 700;
+                          color: white;
+                          background-color: #00ffff;
+                          border: 0;
+                          padding: 10px 40px;
+                          border-radius: 6px;
+                          font-size: 20px;
+                          width: 100%;
+                      `
+
+    const Image = styled.img`
+                          width: 100%;
+                      `
+
+    const Footer = styled.div`
+                          margin-bottom: 100px;
+                      `
 
   return(
     <div>
@@ -113,13 +157,14 @@ export default class OrbsOsPage extends React.Component {
         <meta name="description" content="Orbs OS JS Electron App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
+        <PageRevealer pageTitle={this.state.pageTitle} />
         <Container>
           <Content>
            <Heading1>
            <BaffleText
-                        text="JavaScript Electron App"
+                        text="Electron JS App"
                         revealDuration={700}
-                        revealDelay={1000}
+                        revealDelay={4000}
                         parentMethod={this.reveal}
                     />
            </Heading1>
@@ -127,17 +172,62 @@ export default class OrbsOsPage extends React.Component {
            <BaffleText
                         text="Orbs OS"
                         revealDuration={500}
-                        revealDelay={600}
+                        revealDelay={3000}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>	
-           Project: ORBS OS
-Type: Native Application
-Tools: JavaScript, Electron, Ruby on Rails
-Date: 2019</p>
-            <p>ORBS OS is a Flatiron School project created over 4 days using a frontend of Vanilla JavaScript and Electron Framework, with a Ruby on Rails backend. The app is a mock operating system, enabling users to create local profiles, set user photos using webcam, and has access to multiple mini-applications within the OS. Weather widget, task manager, calculator, piano/keyboard app, text editor/code editor, iframe web browser and timer are some of the micro apps found within the OS. Windows within the app can be drag and dropped, as well as customized user wallpapers, as well as full CRUD actions for user accounts.</p>
-
+            <TopSection>
+              <InfoBox>
+                <p><Bold>Project:</Bold> ORBS OS</p>
+                <p><Bold>Type:</Bold> Native Application</p>
+                <p><Bold>Tools:</Bold> JavaScript, Electron, Ruby on Rails</p>
+                <p><Bold>Date:</Bold> 2019</p>
+                <Button>SOURCE CODE</Button>
+              </InfoBox>
+              <img src={splash} width="70%;" alt="" />
+            </TopSection>
+            <Container>
+              <Row>
+                <Col>
+                  <p>ORBS OS is a Flatiron School project created over 4 days using a frontend of Vanilla JavaScript and Electron Framework, with a Ruby on Rails backend. The app is a mock operating system, enabling users to create local profiles, set user photos using webcam, and has access to multiple mini-applications within the OS. Weather widget, task manager, calculator, piano/keyboard app, text editor/code editor, iframe web browser and timer are some of the micro apps found within the OS. Windows within the app can be drag and dropped, as well as customized user wallpapers, as well as full CRUD actions for user accounts.</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={login} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={create} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={splash} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={desktop} alt="" />
+                </Col>
+              </Row>
+              <Footer>
+                <Row>
+                  <Col>
+                    <Button>SOURCE CODE ON GITHUB</Button>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Button>BACK TO PORTFOLIO</Button>
+                  </Col>
+                  <Col>
+                    <Button>NEXT PROJECT</Button>
+                  </Col>
+                </Row>
+              </Footer>
+            </Container>
           </Content>
         </Container>
       </Main>
