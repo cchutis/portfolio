@@ -1,8 +1,17 @@
 import React from 'react'
+import PageRevealer from '../components/page-revealer'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
+import splash from '../../content/images/portfolio-items/CryptoChambr/splash.png'
+import login from '../../content/images/portfolio-items/CryptoChambr/login.png'
+import bitcoin from '../../content/images/portfolio-items/CryptoChambr/bitcoin.png'
+import eos from '../../content/images/portfolio-items/CryptoChambr/eos.png'
+import qtum from '../../content/images/portfolio-items/CryptoChambr/qtum.png'
+import history from '../../content/images/portfolio-items/CryptoChambr/history.png'
+import buy from '../../content/images/portfolio-items/CryptoChambr/buy.png'
+import sell from '../../content/images/portfolio-items/CryptoChambr/sell.png'
 
 export default class CryptoChambrPage extends React.Component {
 
@@ -13,7 +22,8 @@ export default class CryptoChambrPage extends React.Component {
         width: 0,
         animation : false,
         complete: false,
-        hide: false
+        hide: false,
+        pageTitle: "CryptoChambr"
     }
     this.reveal = this.reveal.bind(this)
   }
@@ -101,10 +111,49 @@ export default class CryptoChambrPage extends React.Component {
           `
 
           const Content = styled.div`
-              position: relative;
-              z-index: 10;
-              margin-top: 100px;
-          `
+                    position: relative;
+                    z-index: 10;
+                    margin-top: 100px;
+                    color: white;
+                `
+
+          const TopSection = styled.div`
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                `
+
+          const InfoBox = styled.div`
+                    width: 30%;
+                    background-color: #5b7f86;
+                    padding: 20px;
+                    overflow: hidden;
+                    min-height: 275px;
+                    border-radius: 10px;
+                `
+
+          const Bold = styled.b`
+                color: #00ffff;
+                `
+
+          const Button = styled.button`
+                font-weight: 700;
+                    color: white;
+                    background-color: #00ffff;
+                    border: 0;
+                    padding: 10px 40px;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    width: 100%;
+                `
+
+          const Image = styled.img`
+                    width: 100%;
+                `
+
+          const Footer = styled.div`
+                    margin-bottom: 100px;
+                `
 
   return(
     <div>
@@ -113,13 +162,14 @@ export default class CryptoChambrPage extends React.Component {
         <meta name="description" content="CryptoChambr Ruby on Rails App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
+        <PageRevealer pageTitle={this.state.pageTitle} />
         <Container>
           <Content>
            <Heading1>
            <BaffleText
                         text="Ruby on Rails App"
                         revealDuration={700}
-                        revealDelay={1000}
+                        revealDelay={4000}
                         parentMethod={this.reveal}
                     />
            </Heading1>
@@ -127,17 +177,78 @@ export default class CryptoChambrPage extends React.Component {
            <BaffleText
                         text="CryptoChambr"
                         revealDuration={500}
-                        revealDelay={600}
+                        revealDelay={3000}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>Project: Cryptochambr
-              Type: Ruby on Rails
-              Tools: Ruby, Ruby on Rails, CoinMarketCap API, Sketch, Particles.js
-              Date: 2019</p>
-            <p>Cryptochambr is a Flatiron School project created over 4 days utilizing a Full stack Ruby on Rails framework. The app allows users to perform mock cryptocurrency trading. Users have full CRUD capability on their own account. They can add funds in USD, browse current crypto prices based on real time CoinMarketCap API info, purchase and sell coins, and get historical transaction stats. 
+            <TopSection>
+              <InfoBox>
+                <p><Bold>Project:</Bold> Cryptochambr</p>
+                <p><Bold>Type:</Bold> Ruby on Rails</p>
+                <p><Bold>Tools:</Bold> Ruby, Ruby on Rails, CoinMarketCap API, Sketch, Particles.js</p>
+                <p><Bold>Date:</Bold> 2019</p>
+                <Button>SEE IT LIVE</Button>
+                <Button>SOURCE CODE</Button>
+              </InfoBox>
+              <img src={splash} width="70%;" alt="" />
+            </TopSection>
+            <Container>
+              <Row>
+                <Col>
+                  <p>Cryptochambr is a Flatiron School project created over 4 days utilizing a Full stack Ruby on Rails framework. The app allows users to perform mock cryptocurrency trading. Users have full CRUD capability on their own account. They can add funds in USD, browse current crypto prices based on real time CoinMarketCap API info, purchase and sell coins, and get historical transaction stats.
               Users are also capable of filtering transactions by type (buy or sell) and coin. Transaction visual indicators also will display in red or green, based on if coin's current valuation is more or less than original purchase price.</p>
-
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={login} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={bitcoin} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={eos} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={qtum} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={history} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={buy} alt="" />
+                </Col>
+                <Col>
+                  <Image src={sell} alt="" />
+                </Col>
+              </Row>
+              <Footer>
+                <Row>
+                  <Col>
+                    <Button>SEE IT LIVE</Button>
+                    <Button>SOURCE CODE ON GITHUB</Button>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Button>BACK TO PORTFOLIO</Button>
+                  </Col>
+                  <Col>
+                    <Button>NEXT PROJECT</Button>
+                  </Col>
+                </Row>
+              </Footer>
+            </Container>
           </Content>
         </Container>
       </Main>
