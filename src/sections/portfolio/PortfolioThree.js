@@ -35,13 +35,13 @@ class PortfolioThree extends React.Component {
         const settings = {
             dots: true,
             swipe: true,
-            infinite: false,
+            infinite: true,
             speed: 500,
-            slidesToShow: 10,
+            slidesToShow: 5,
             slidesToScroll: 5,
             arrows: true,
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             loop: true,
             responsive: [
               {

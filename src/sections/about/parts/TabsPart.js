@@ -87,26 +87,44 @@ class TabsPart extends React.Component {
             animation: ${Fade} 1s forwards;
         `
 
+        // const SkillsGrid = styled.div`
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        // `
+        // const SkillsRow = styled.div`
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: center;
+        //     align-items: center;
+        // `
+        // const SkillsItem = styled.div`
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        //     color: white;
+        // `
+
         const SkillsGrid = styled.div`
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        `
-        const SkillsRow = styled.div`
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        justify-content: center;
+        grid-template-areas:
+          "JS react electron node"
+          "html css sass aframe"
+          "rubyrails sketch unity csharp";
         `
         const SkillsItem = styled.div`
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
         `
-
         
 
         return(
@@ -127,60 +145,57 @@ class TabsPart extends React.Component {
                         display: this.state.tab === "skills" ? "block" : "none"
                     }}>
                         <SkillsGrid>
-                            <SkillsRow>
-                                <SkillsItem>
+                            
+                                <SkillsItem className="JS">
                                     <img src={javascript} width="150px" alt="" />
                                     <p>JavaScript ES6</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="react">
                                     <img src={react} width="150px" alt="" />
                                     <p>React</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="electron">
                                     <img src={electron} width="150px" alt="" />
                                     <p>Electron JS</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="node">
                                     <img src={node} width="150px" alt="" />
                                     <p>Node JS</p>
                                 </SkillsItem>
-                            </SkillsRow>
-                            <SkillsRow>
-                                <SkillsItem>
+                            
+                                <SkillsItem className="html">
                                     <img src={html} width="150px" alt="" />
                                     <p>HTML5</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="css">
                                     <img src={css} width="150px" alt="" />
                                     <p>CSS3</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="sass">
                                     <img src={sass} width="150px" alt="" />
                                     <p>Sass</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="aframe">
                                     <img src={aframe} width="150px" alt="" />
                                     <p>A-Frame</p>
                                 </SkillsItem>
-                            </SkillsRow>
-                            <SkillsRow>
-                                <SkillsItem>
+                            
+                                <SkillsItem className="rubyrails">
                                     <img src={rubyrails} width="150px" alt="" />
                                     <p>Ruby on Rails</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="sketch">
                                     <img src={sketch} width="150px" alt="" />
                                     <p>Sketch</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="unity">
                                     <img src={unity} width="150px" alt="" />
                                     <p>Unity 3D</p>
                                 </SkillsItem>
-                                <SkillsItem>
+                                <SkillsItem className="csharp">
                                     <img src={csharp} width="150px" alt="" />
                                     <p>C#</p>
                                 </SkillsItem>
-                            </SkillsRow>
                         </SkillsGrid>
                     </Tab>
                 </Tabs>

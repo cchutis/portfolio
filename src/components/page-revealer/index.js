@@ -10,7 +10,8 @@ class PageRevealer extends React.Component {
         this.state = {
             animation : false,
             complete: false,
-            hide: false
+            hide: false,
+            pageTitle: "Constantine Chutis"
         }
         this.reveal = this.reveal.bind(this)
     }
@@ -34,7 +35,7 @@ class PageRevealer extends React.Component {
             return (
                 <AnimationContainer animation="fadeIn">
                     <BaffleText
-                        text="Constantine Chutis"
+                        text={this.props.pageTitle || "Constantine Chutis"}
                         revealDuration={500}
                         revealDelay={1000}
                         parentMethod={this.reveal}

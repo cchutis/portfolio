@@ -11,7 +11,8 @@ import ContactPersonal from 'sections/contact/ContactPersonal.js'
 class Index extends React.Component {
 
   state = {
-    show: false
+    show: false,
+    pageTitle: "Constantine Chutis"
   }
 
   showModal = e => {
