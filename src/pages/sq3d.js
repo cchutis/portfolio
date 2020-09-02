@@ -1,8 +1,16 @@
 import React from 'react'
+import PageRevealer from '../components/page-revealer'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
+import mockup from '../../content/images/portfolio-items/Sq3d/mockup.png'
+import homePage from '../../content/images/portfolio-items/Sq3d/homePage.png'
+import purple from '../../content/images/portfolio-items/Sq3d/purple.png'
+import logo from '../../content/images/portfolio-items/Sq3d/logo.png'
+import mobile1 from '../../content/images/portfolio-items/Sq3d/mobile1.png'
+import mobile2 from '../../content/images/portfolio-items/Sq3d/mobile2.png'
+import mobile3 from '../../content/images/portfolio-items/Sq3d/mobile3.png'
 
 export default class Sq3dPage extends React.Component {
 
@@ -13,7 +21,8 @@ export default class Sq3dPage extends React.Component {
         width: 0,
         animation : false,
         complete: false,
-        hide: false
+      hide: false,
+      pageTitle: "S-Squared 3D Printers"
     }
     this.reveal = this.reveal.bind(this)
   }
@@ -100,10 +109,49 @@ export default class Sq3dPage extends React.Component {
               }
           `
 
-          const Content = styled.div`
+    const Content = styled.div`
               position: relative;
               z-index: 10;
               margin-top: 100px;
+              color: white;
+          `
+
+    const TopSection = styled.div`
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          `
+
+    const InfoBox = styled.div`
+              width: 30%;
+              background-color: #5b7f86;
+              padding: 20px;
+              overflow: hidden;
+              min-height: 275px;
+              border-radius: 10px;
+          `
+
+    const Bold = styled.b`
+          color: #00ffff;
+          `
+
+    const Button = styled.button`
+          font-weight: 700;
+              color: white;
+              background-color: #00ffff;
+              border: 0;
+              padding: 10px 40px;
+              border-radius: 6px;
+              font-size: 20px;
+              width: 100%;
+          `
+
+    const Image = styled.img`
+              width: 100%;
+          `
+
+    const Footer = styled.div`
+              margin-bottom: 100px;
           `
 
   return(
@@ -113,13 +161,14 @@ export default class Sq3dPage extends React.Component {
         <meta name="description" content="eCommerce Website" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
+        <PageRevealer pageTitle={this.state.pageTitle} />
         <Container>
           <Content>
            <Heading1>
            <BaffleText
                         text="eCommerce Website"
                         revealDuration={700}
-                        revealDelay={1000}
+                        revealDelay={4000}
                         parentMethod={this.reveal}
                     />
            </Heading1>
@@ -127,17 +176,64 @@ export default class Sq3dPage extends React.Component {
            <BaffleText
                         text="S-Squared 3D"
                         revealDuration={500}
-                        revealDelay={600}
+                        revealDelay={3000}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>	
-           Project: S-Squared 3D Printers
-Type: Web Design/Dev
-Tools: Photoshop, Illustrator, Premiere, After Effects, Brackets, Sketch
-Date: 2017</p>
-            <p>S-Squared 3D Printers’ website promotes and provides a means of purchasing their various models of 3D printers and accessories. All photography and videography included on the site was shot by me. I also maintain the backend shopping cart.</p>
-
+            <TopSection>
+              <InfoBox>
+                <p><Bold>Project:</Bold> S-Squared 3D Printers</p>
+                <p><Bold>Type:</Bold> Web Design/Dev</p>
+                <p><Bold>Tools:</Bold> Photoshop, Illustrator, Premiere, After Effects, Brackets, Sketch</p>
+                <p><Bold>Date:</Bold> 2017</p>
+                <Button>SEE IT LIVE</Button>
+              </InfoBox>
+              <img src={mockup} width="70%;" alt="" />
+            </TopSection>
+            <Container>
+              <Row>
+                <Col>
+                  <Image src={homePage} alt="" />
+                </Col>
+                <Col>
+                  <Image src={purple} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p>S-Squared 3D Printers’ website promotes and provides a means of purchasing their various models of 3D printers and accessories. All photography and videography included on the site was shot by me. I also maintain the backend shopping cart.</p>
+                </Col>
+                <Col>
+                  <Image src={logo} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={mobile1} alt="" />
+                </Col>
+                <Col>
+                  <Image src={mobile2} alt="" />
+                </Col>
+                <Col>
+                  <Image src={mobile3} alt="" />
+                </Col>
+              </Row>
+              <Footer>
+                <Row>
+                  <Col>
+                    <Button>SEE IT LIVE</Button>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Button>BACK TO PORTFOLIO</Button>
+                  </Col>
+                  <Col>
+                    <Button>NEXT PROJECT</Button>
+                  </Col>
+                </Row>
+              </Footer>
+            </Container>
           </Content>
         </Container>
       </Main>

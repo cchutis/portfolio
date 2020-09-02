@@ -156,7 +156,7 @@ export default class BioRecoveryPage extends React.Component {
           const Footer = styled.div`
               margin-bottom: 100px;
           `
-
+          
   return(
     <div>
       <Helmet>

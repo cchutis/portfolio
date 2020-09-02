@@ -1,7 +1,7 @@
 ---
 id: 8
 image: './image.jpg'
-title: "Blueshirts Breakaway"
-category: "Wordpress News Website"
-link: "https://github.com"
+title: "Safeguard: VR Crime Scene Experience"
+category: "Virtual Reality Unity App"
+link: "/safeguard"
 ---

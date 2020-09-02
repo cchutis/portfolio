@@ -1,8 +1,13 @@
 import React from 'react'
+import PageRevealer from '../components/page-revealer'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import BaffleText from 'components/baffle-text'
+import splash from '../../content/images/portfolio-items/Recursive/splash.png'
+import login from '../../content/images/portfolio-items/Recursive/login.png'
+import projects from '../../content/images/portfolio-items/Recursive/projects.png'
+import tasks from '../../content/images/portfolio-items/Recursive/tasks.png'
 
 export default class RecursivePage extends React.Component {
 
@@ -13,7 +18,8 @@ export default class RecursivePage extends React.Component {
         width: 0,
         animation : false,
         complete: false,
-        hide: false
+      hide: false,
+      pageTitle: "Recursive"
     }
     this.reveal = this.reveal.bind(this)
   }
@@ -100,11 +106,50 @@ export default class RecursivePage extends React.Component {
               }
           `
 
-          const Content = styled.div`
-              position: relative;
-              z-index: 10;
-              margin-top: 100px;
-          `
+    const Content = styled.div`
+                    position: relative;
+                    z-index: 10;
+                    margin-top: 100px;
+                    color: white;
+                `
+
+    const TopSection = styled.div`
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                `
+
+    const InfoBox = styled.div`
+                    width: 30%;
+                    background-color: #5b7f86;
+                    padding: 20px;
+                    overflow: hidden;
+                    min-height: 275px;
+                    border-radius: 10px;
+                `
+
+    const Bold = styled.b`
+                color: #00ffff;
+                `
+
+    const Button = styled.button`
+                font-weight: 700;
+                    color: white;
+                    background-color: #00ffff;
+                    border: 0;
+                    padding: 10px 40px;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    width: 100%;
+                `
+
+    const Image = styled.img`
+                    width: 100%;
+                `
+
+    const Footer = styled.div`
+                    margin-bottom: 100px;
+                `
 
   return(
     <div>
@@ -113,13 +158,14 @@ export default class RecursivePage extends React.Component {
         <meta name="description" content="Recursive Project Management App" />
       </Helmet>
       <Main style={{height: `${this.state.height}px`}}>
+        <PageRevealer pageTitle={this.state.pageTitle} />
         <Container>
           <Content>
            <Heading1>
            <BaffleText
                         text="React Single Page App"
                         revealDuration={700}
-                        revealDelay={1000}
+                        revealDelay={4000}
                         parentMethod={this.reveal}
                     />
            </Heading1>
@@ -127,17 +173,57 @@ export default class RecursivePage extends React.Component {
            <BaffleText
                         text="Recursive"
                         revealDuration={500}
-                        revealDelay={600}
+                        revealDelay={3000}
                         parentMethod={this.reveal}
                     />
            </Heading2>
-           <p>	
-           Project: Recursive Project Management App
-Type: React Web App
-Tools: JavaScript, React, Ruby on Rails
-Date: 2019</p>
-            <p>Recursive is a project management app, ala Trello, built over the course of 4 days at Flatiron School. The app is a full React app, with a Rails backend. The app allows for full CRUD actions, as well as allowing the user to create multiple projects, and tasks within each project. App has full live search and filter actions via controlled forms. Tasks and projects can be assigned due dates as well as difficulty ratings. Stretch goal for difficulty ratings is to assign a user experience for completing tasks, based on rating level, and will unlock various perks, such as color themes and badges.</p>
-
+            <TopSection>
+              <InfoBox>
+                <p><Bold>Project:</Bold> Recursive Project Management App</p>
+                <p><Bold>Type:</Bold> React Web App</p>
+                <p><Bold>Tools:</Bold> JavaScript, React, Ruby on Rails</p>
+                <p><Bold>Date:</Bold> 2019</p>
+                <Button>SOURCE CODE</Button>
+              </InfoBox>
+              <img src={splash} width="70%;" alt="" />
+            </TopSection>
+            <Container>
+              <Row>
+                <Col>
+                  <p>Recursive is a project management app, ala Trello, built over the course of 4 days at Flatiron School. The app is a full React app, with a Rails backend. The app allows for full CRUD actions, as well as allowing the user to create multiple projects, and tasks within each project. App has full live search and filter actions via controlled forms. Tasks and projects can be assigned due dates as well as difficulty ratings. Stretch goal for difficulty ratings is to assign a user experience for completing tasks, based on rating level, and will unlock various perks, such as color themes and badges.</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={login} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={projects} alt="" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image src={tasks} alt="" />
+                </Col>
+              </Row>
+              <Footer>
+                <Row>
+                  <Col>
+                    <Button>SOURCE CODE ON GITHUB</Button>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Button>BACK TO PORTFOLIO</Button>
+                  </Col>
+                  <Col>
+                    <Button>NEXT PROJECT</Button>
+                  </Col>
+                </Row>
+              </Footer>
+            </Container>
           </Content>
         </Container>
       </Main>
