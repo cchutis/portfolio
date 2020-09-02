@@ -141,6 +141,10 @@ export default class RecursivePage extends React.Component {
                     border-radius: 6px;
                     font-size: 20px;
                     width: 100%;
+                    &:hover {
+                      color: #5b7f86;
+                      background-color: white;
+                    }
                 `
 
     const Image = styled.img`

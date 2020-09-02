@@ -145,6 +145,10 @@ export default class CryptoChambrPage extends React.Component {
                     border-radius: 6px;
                     font-size: 20px;
                     width: 100%;
+                    &:hover {
+                      color: #5b7f86;
+                      background-color: white;
+                    }
                 `
 
           const Image = styled.img`
@@ -244,7 +248,7 @@ export default class CryptoChambrPage extends React.Component {
                     <Button>BACK TO PORTFOLIO</Button>
                   </Col>
                   <Col>
-                    <Button>NEXT PROJECT</Button>
+                    <a href="/headspace"><Button>NEXT PROJECT</Button></a>
                   </Col>
                 </Row>
               </Footer>
