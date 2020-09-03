@@ -3,6 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled, { keyframes } from 'styled-components'
 import Typewriter from 'typewriter-effect'
 import Glitch from 'components/glitch'
+import resumeFile from '../../../content/images/CChutis-Resume2020.pdf'
+
 class HeroPersonal extends React.Component {
 
     constructor(props) {
@@ -180,7 +182,7 @@ class HeroPersonal extends React.Component {
                                 }}
                             />
                         </Type>
-                        <Resume href="./">
+                        <Resume href={resumeFile} target="_blank">
                             Download Resume
                         </Resume>
                     </HeadingBox>
