@@ -68,7 +68,7 @@ class PortfolioThree extends React.Component {
         }
         
         return (
-            <Section id="portfolio">
+            <Section id="projects">
                   <Col md={12} style={{padding: 0}}>
                     <Container>
                       <AnimatedHeading text="Recent projects" />

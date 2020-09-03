@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
 
-class ServicesOne extends React.Component {
+class ServicesThree extends React.Component {
 
     shouldComponentUpdate() {
         return false
@@ -132,7 +132,7 @@ class ServicesOne extends React.Component {
         `
 
         return(
-            <Section id="services">
+            <Section id="skills">
                 <ServiceContainer>
                     <Container>
                         <AnimatedHeading text="Skills" />
@@ -345,7 +345,7 @@ export default props => (
         vr,
         mobile,
         design,
-        motion}) => <ServicesOne  
+        motion}) => <ServicesThree  
         background={background}
         frontend={frontend}
         uiux={uiux}

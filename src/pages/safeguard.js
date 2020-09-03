@@ -34,12 +34,6 @@ export default class SafeguardPage extends React.Component {
   reveal() {
     if (!this.state.complete) {
         this.setState({animation: true, complete: true})
-        // setTimeout(() => { 
-        //     // document.getElementById("reveal_container").style.backgroundColor = "transparent"
-        //     setTimeout(() => { 
-        //         this.setState({animation: false, hide: true})
-        //     }, 500);
-        // }, 400);
     }
 }
 
@@ -124,6 +118,7 @@ export default class SafeguardPage extends React.Component {
           display: flex;
           flex-direction: row;
           align-items: center;
+          padding: 50px 10px;
           `
 
     const InfoBox = styled.div`
@@ -133,6 +128,7 @@ export default class SafeguardPage extends React.Component {
               overflow: hidden;
               min-height: 200px;
               border-radius: 10px;
+              margin-right: 20px;
           `
 
     const Bold = styled.b`
@@ -148,6 +144,7 @@ export default class SafeguardPage extends React.Component {
               border-radius: 6px;
               font-size: 20px;
               width: 100%;
+              margin-bottom: 10px;
               &:hover {
                       color: #5b7f86;
                       background-color: white;
@@ -156,6 +153,7 @@ export default class SafeguardPage extends React.Component {
 
     const Image = styled.img`
               width: 100%;
+              padding: 20px 0;
           `
 
     const Footer = styled.div`
@@ -264,10 +262,10 @@ export default class SafeguardPage extends React.Component {
               <Footer>
                 <Row>
                   <Col>
-                    <Button>BACK TO PORTFOLIO</Button>
+                    <a href="/"><Button>BACK TO PORTFOLIO</Button></a>
                   </Col>
                   <Col>
-                    <Button>NEXT PROJECT</Button>
+                    <a href="/projectneptune"><Button>NEXT PROJECT</Button></a>
                   </Col>
                 </Row>
               </Footer>

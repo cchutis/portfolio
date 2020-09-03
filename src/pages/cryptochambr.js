@@ -31,12 +31,6 @@ export default class CryptoChambrPage extends React.Component {
   reveal() {
     if (!this.state.complete) {
         this.setState({animation: true, complete: true})
-        // setTimeout(() => { 
-        //     // document.getElementById("reveal_container").style.backgroundColor = "transparent"
-        //     setTimeout(() => { 
-        //         this.setState({animation: false, hide: true})
-        //     }, 500);
-        // }, 400);
     }
 }
 
@@ -121,6 +115,7 @@ export default class CryptoChambrPage extends React.Component {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                padding: 50px 10px;
                 `
 
           const InfoBox = styled.div`
@@ -130,6 +125,7 @@ export default class CryptoChambrPage extends React.Component {
                     overflow: hidden;
                     min-height: 275px;
                     border-radius: 10px;
+                    margin-right: 20px;
                 `
 
           const Bold = styled.b`
@@ -145,6 +141,7 @@ export default class CryptoChambrPage extends React.Component {
                     border-radius: 6px;
                     font-size: 20px;
                     width: 100%;
+                    margin-bottom: 10px;
                     &:hover {
                       color: #5b7f86;
                       background-color: white;
@@ -153,6 +150,7 @@ export default class CryptoChambrPage extends React.Component {
 
           const Image = styled.img`
                     width: 100%;
+                    padding: 20px 0;
                 `
 
           const Footer = styled.div`
@@ -191,8 +189,7 @@ export default class CryptoChambrPage extends React.Component {
                 <p><Bold>Type:</Bold> Ruby on Rails</p>
                 <p><Bold>Tools:</Bold> Ruby, Ruby on Rails, CoinMarketCap API, Sketch, Particles.js</p>
                 <p><Bold>Date:</Bold> 2019</p>
-                <Button>SEE IT LIVE</Button>
-                <Button>SOURCE CODE</Button>
+                <a href="https://github.com/cchutis/crypto-app" target="_blank" rel="noopener noreferrer"><Button>GITHUB</Button></a>
               </InfoBox>
               <img src={splash} width="70%;" alt="" />
             </TopSection>
@@ -232,6 +229,8 @@ export default class CryptoChambrPage extends React.Component {
                 <Col>
                   <Image src={buy} alt="" />
                 </Col>
+              </Row>
+              <Row>
                 <Col>
                   <Image src={sell} alt="" />
                 </Col>
@@ -239,13 +238,12 @@ export default class CryptoChambrPage extends React.Component {
               <Footer>
                 <Row>
                   <Col>
-                    <Button>SEE IT LIVE</Button>
-                    <Button>SOURCE CODE ON GITHUB</Button>
+                    <a href="https://github.com/cchutis/crypto-app" target="_blank" rel="noopener noreferrer"><Button>GITHUB</Button></a>
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <Button>BACK TO PORTFOLIO</Button>
+                    <a href="/"><Button>BACK TO PORTFOLIO</Button></a>
                   </Col>
                   <Col>
                     <a href="/headspace"><Button>NEXT PROJECT</Button></a>

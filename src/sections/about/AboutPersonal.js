@@ -3,7 +3,6 @@ import { Row, Col, Container } from 'react-bootstrap'
 import styled, { keyframes } from 'styled-components'
 import RevealContent from 'components/reveal-content'
 import { StaticQuery, graphql } from 'gatsby'
-// import Counter from 'components/counter'
 import AnimationContainer from 'components/animation-container'
 import TabsPart from 'sections/about/parts/TabsPart'
 
@@ -32,16 +31,6 @@ class AboutPersonal extends React.Component {
                 padding: 0 20px;
             }
         `
-
-        // const CounterRow = styled(Row)`
-        //     margin-top: 100px;
-        //     background-color: #000;
-        //     padding: 100px 0;
-        //     @media (max-width: 500px) {
-        //         margin-top: 0;
-        //     }
-
-        // `
         
         const AboutContainer = styled(Container)`
             padding: 100px 0;
@@ -49,35 +38,6 @@ class AboutPersonal extends React.Component {
                 padding: 50px 0;
             }
         `
-
-        // const CounterComponent = styled.div`
-        //     margin: 10px 0;
-        //     text-align: center;
-        //     @media (max-width:767px) {
-        //         margin: 50px 0;
-        //         text-align:center;
-        //     }
-        //     .value {
-        //         font-size: 120px;
-        //         font-family: Teko;
-        //         color: #fff;
-        //         line-height: 90px;
-        //     }
-        //     .text {
-        //         font-size: 20px;
-        //         color: #fff;
-        //     }
-        //     .symbol {
-        //         color: #04e5e5;
-        //         position: absolute;
-        //         font-size: 39px;
-        //         top: -28px;
-        //         @media (max-width: 500px) {
-        //             top: 0;
-        //         }
-        //     }
-
-        // `
 
         const LeftCol = styled(Col)`
             display: flex;

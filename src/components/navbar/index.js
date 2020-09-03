@@ -11,7 +11,7 @@ class Navbar extends React.Component {
         this.state = {
           collapse: false,
           sticky: false,
-          sections: this.props.sections ? this.props.sections : ['home', 'about', 'services', 'portfolio', 'testimonials', 'clients', 'team', 'blog', 'contact']
+          sections: this.props.sections ? this.props.sections : ['home', 'about', 'skills', 'projects', 'contact']
         }
     }
 

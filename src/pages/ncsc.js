@@ -30,12 +30,6 @@ export default class NcscPage extends React.Component {
   reveal() {
     if (!this.state.complete) {
         this.setState({animation: true, complete: true})
-        // setTimeout(() => { 
-        //     // document.getElementById("reveal_container").style.backgroundColor = "transparent"
-        //     setTimeout(() => { 
-        //         this.setState({animation: false, hide: true})
-        //     }, 500);
-        // }, 400);
     }
 }
 
@@ -120,6 +114,7 @@ export default class NcscPage extends React.Component {
           display: flex;
           flex-direction: row;
           align-items: center;
+          padding: 50px 10px;
           `
 
     const InfoBox = styled.div`
@@ -129,6 +124,7 @@ export default class NcscPage extends React.Component {
               overflow: hidden;
               min-height: 275px;
               border-radius: 10px;
+              margin-right: 20px;
           `
 
     const Bold = styled.b`
@@ -144,6 +140,7 @@ export default class NcscPage extends React.Component {
               border-radius: 6px;
               font-size: 20px;
               width: 100%;
+              margin-bottom: 10px;
               &:hover {
                       color: #5b7f86;
                       background-color: white;
@@ -152,6 +149,7 @@ export default class NcscPage extends React.Component {
 
     const Image = styled.img`
               width: 100%;
+              padding: 20px 0;
           `
 
     const Footer = styled.div`
@@ -190,7 +188,7 @@ export default class NcscPage extends React.Component {
                 <p><Bold>Type:</Bold> Web Design/Dev</p>
                 <p><Bold>Tools:</Bold> Photoshop, Illustrator, Brackets, Sketch</p>
                 <p><Bold>Date:</Bold> 2017</p>
-                <Button>SEE IT LIVE</Button>
+                <a href="https://www.crimescenecleanup.com" target="_blank" rel="noopener noreferrer"><Button>SEE IT LIVE</Button></a>
               </InfoBox>
               <img src={mockup} width="70%;" alt="" />
             </TopSection>
@@ -222,15 +220,15 @@ export default class NcscPage extends React.Component {
               <Footer>
                 <Row>
                   <Col>
-                    <Button>SEE IT LIVE</Button>
+                    <a href="https://www.crimescenecleanup.com" target="_blank" rel="noopener noreferrer"><Button>SEE IT LIVE</Button></a>
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <Button>BACK TO PORTFOLIO</Button>
+                    <a href="/"><Button>BACK TO PORTFOLIO</Button></a>
                   </Col>
                   <Col>
-                    <Button>NEXT PROJECT</Button>
+                    <a href="/safeguard"><Button>NEXT PROJECT</Button></a>
                   </Col>
                 </Row>
               </Footer>
