@@ -10,7 +10,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
-          <link href="/img/favicon.ico" rel="icon" />
+          <link href="/img/icon.ico" rel="icon" />
         </head>
         <body style={{ backgroundColor: '#000' }}>
           <div

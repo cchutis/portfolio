@@ -41,7 +41,7 @@ class PortfolioThree extends React.Component {
             slidesToScroll: 5,
             arrows: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             loop: true,
             responsive: [
               {
